@@ -5,6 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: "Zakir's Portfolio",
+  subtitle: "Zakir Gowani is a full-stack software engineer with 7+ years of experience.",
   description: "Zakir Gowani's portfolio of software projects",
 }
 

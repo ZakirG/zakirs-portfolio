@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 'opus-melody',
     title: 'OpusMelody - Solo Startup',
-    description: 'Solo project. Generative music composition studio with free and paid features. Deployed with Angular, Flask, Python, Digital Ocean, Stripe, Postgres, Google Analytics.',
+    description: 'Generative music composition studio with free and paid features. Deployed with Angular, Flask, Python, Digital Ocean, Stripe, Postgres, Google Analytics. 260 unique users, 22 email signups and counting.',
     mainImage: '/screenshots/OpusMelody - 1.png',
     images: [
       '/screenshots/OpusMelody - 1.png',
@@ -12,7 +12,7 @@ export const projects = [
     contribution: '',
     contributionHTML: `
         <div>
-        <p><strong>GenerativeDAW</strong> is a digital audio workstation that allows the generation, editing, and export of MIDI compositions.</p>
+        <p><strong>OpusMelody</strong> is a digital audio workstation that allows the generation, editing, and export of MIDI compositions.</p>
 
         <p>We encode popular compositional approaches suggested by classical, jazz, pop, and hip hop lineages into procedural algorithms to create compositions matching user input, with some randomness sprinkled in.</p>
 
@@ -70,13 +70,12 @@ export const projects = [
     `,
     links: [
       { title: 'Video Demo', href: 'https://www.youtube.com/watch?v=Z2GSPQuNvfk&ab_channel=Zaqir' },
-      { title: 'Visit OpusMelody', href: 'https://opusmelody.com' }
+      { title: 'Try OpusMelody', href: 'https://opusmelody.com' }
     ]
   },
   {
     id: 'daily-angel',
     title: 'Daily Angel - Solo Startup',
-    description: 'AI-powered daily emotional companion app',
     mainImage: '/screenshots/Daily Angel - 1.png',
     images: [
       '/screenshots/Daily Angel - 1.png',
@@ -85,7 +84,7 @@ export const projects = [
       '/screenshots/Daily Angel - 4.png',
       '/screenshots/Daily Angel - 5.png'
     ],
-    contribution: 'Developed a comprehensive mobile-first web application that serves as an AI emotional companion. Users receive daily angel messages tailored to their emotional state and personal journey.',
+    contribution: "A personalized AI accountability coach that checks in with you over email 3 times a day to make sure you’re on track toward your goals.<br/><br/> Includes an RPG-style profile card that gamifies what you're working on. Deployed with React, Flask, Digital Ocean, OpenRouter, nginx, gunicorn, Stripe, SendGrid.",
     links: [
       { title: 'Video Demo', href: 'dailyangel.me' },
       { title: 'Daily Angel', href: 'dailyangel.me' },
@@ -94,17 +93,34 @@ export const projects = [
   {
     id: 'ctds',
     title: 'CTDS Data Portal - In a Team of 8',
-    description: 'A comprehensive data visualization dashboard',
+    // description: 'A React data portal for visualizing patient data. Built for the Center for Translational Data Science at the University of Chicago. I contributed new filters and filter-sharing features to the dashboard while working in a team of 8.',
     mainImage: '/screenshots/CTDS - 1.png',
     images: [
       '/screenshots/CTDS - 1.png',
       '/screenshots/CTDS - 2.png'
     ],
-    contribution: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+    contribution: "A React data portal for visualizing patient data. Built for the Center for Translational Data Science at the University of Chicago. I contributed new filters and filter-sharing features to the dashboard while working in a team of 8.",
     links: [
-      { title: 'CTDS Website', href: 'https://ctds.uchicago.edu' },
-      { title: 'Project Documentation', href: 'https://ctds.uchicago.edu/docs' }
-    ]
+        { title: 'View the site live', href: 'https://caninedc.org/' },
+        { title: 'Center for Translational Data Science site', href: 'https://ctds.uchicago.edu/' }
+    ],
+    contributionHTML: `
+      <div>
+        <p>I developed React features to visualize, filter, export, and securely share virtual cohorts of patient data, expanding filter functionalities under the direction of PMs and bioinformaticians.</p>
+
+        <p>UI upgrades I contributed:</p>
+        
+        <ul>
+          <li>508-compliance (navigable tab order, focus-trapping modals for disability access)</li>
+          <li>Index-scoped tiered-access security (permission-based views)</li>
+          <li>Toggleable AND/OR checkbox combination modes</li>
+          <li>URL-shareable filter state</li>
+          <li>An export to workspace flow that mounts selected data in a Jupyter notebook</li>
+        </ul>
+        
+        <p>The site shown above is just one of a fleet of parametrizable frontends my contributions affected.</p>
+      </div>
+    `,
   },
   {
     id: 'athena',
@@ -118,10 +134,9 @@ export const projects = [
         '/screenshots/Athena - 5.png',
         '/screenshots/Athena - 6.png'
     ],
-    contribution: 'I served as lead designer and lead developer to redesign BitQuick.co, applying a flat design aesthetic, custom inputs and checkboxes with on-change side effects, and dynamic tools with smooth CSS transitions.',
+    contribution: 'At Athena Bitcoin, I served as lead designer and lead developer to redesign BitQuick.co, applying a flat design aesthetic, custom inputs and checkboxes with on-change side effects, and dynamic tools with smooth CSS transitions. <br/><br/>I completed this work in 2018. Bitquick.co is no longer live.',
     links: [
-      { title: 'Visit BitQuick', href: 'https://bitquick.co' },
-      { title: 'GitHub Repository', href: 'https://github.com/bitquick' }
+      { title: 'Athena Bitcoin company site', href: 'https://athenabitcoin.com/' },
     ]
   },
   {
@@ -131,8 +146,10 @@ export const projects = [
     mainImage: '/screenshots/Desert Adventure Z - 1.png',
     images: [
       '/screenshots/Desert Adventure Z - 1.png',
+      '/screenshots/Desert Adventure Z - 2.png',
+      '/screenshots/Desert Adventure Z - 3.png',
     ],
-    contribution: 'A short desert adventure game written with React functional components. We shift sprite sheets rapidly to create the illusion of animation. <br/><br/>Instructions: Move the character with the arrow keys. Press the up arrow to jump. Defeat enemies by jumping on them. Collect coins.',
+    contribution: 'A short desert adventure game written with React functional components. We shift sprite sheets rapidly to create the illusion of animation.',
     links: [
       { title: 'Video Demo', href: 'https://www.youtube.com/watch?v=aR_-RlabYJE' },
       { title: 'GitHub', href: 'https://github.com/ZakirG/desert-adventure-z' },
@@ -141,15 +158,22 @@ export const projects = [
   {
     id: 'graphing-calculator',
     title: 'Elm Graphing Calculator - Class Project, Team of 2',
-    description: 'Built in team of 2. An interactive graphing calculator with real-time visualization',
+    description: 'An interactive graphing calculator written in Elm',
     mainImage: '/screenshots/Graphing Calculator - 1.png',
     images: [
       '/screenshots/Graphing Calculator - 1.png'
     ],
-    contribution: 'I built the frontend and parts of the backend using functional programming in Elm as part of a class project. Benjamin Rohrer built parts of the backend.',
+    contribution: 'This was a class project meant to serve as practice for functional programming. I built the frontend and parts of the backend, working in a team of 2. <br/><br/>Using functional programming with Elm draw the interface was a quirky choice; no CSS was used in the project.',
+    contributionHTML: `
+        <ul>
+          <li>A custom recursive parsing system that respects parentheses and the order of operations</li>
+          <li>Binary arithmetic operators are supported: +, -, *, / , ^</li>
+          <li>Graph mode toggle: when the "y=" string is shown in the INPUT panel, graph mode is toggled on; this means that the string in the INPUT panel will be graphed. Graph mode can either be toggled using the "y=" button or by including the variable x in the INPUT string.</li>
+          <li>A range interval is shown below the button layout; the buttons to either side either zoom in or zoom out on the displayed graph. We cap the maximum range at (-17,17); we cap the minimum range at (-1,1).</li>
+        </ul>
+    `,
     links: [
-      { title: 'Try Calculator', href: 'https://elm-calculator.example.com' },
-      { title: 'Source Code', href: 'https://github.com/zakirgowani/elm-calculator' }
+      { title: 'Source Code', href: 'https://github.com/ZakirG/elm-graphing-calculator' }
     ]
   },
 ]; 
