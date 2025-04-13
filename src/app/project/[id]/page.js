@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
 import { projects } from '@/data/projects'
@@ -9,6 +9,24 @@ export default function ProjectPage({ params }) {
   const project = projects.find(p => p.id === params.id)
   const [carouselOpen, setCarouselOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [loadedImages, setLoadedImages] = useState({});
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!carouselOpen) return;
+      
+      if (e.key === 'ArrowRight') {
+        nextImage(e);
+      } else if (e.key === 'ArrowLeft') {
+        prevImage(e);
+      } else if (e.key === 'Escape') {
+        closeCarousel();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [carouselOpen]);
 
   if (!project) {
     return <div>Project not found</div>
@@ -97,11 +115,17 @@ export default function ProjectPage({ params }) {
             className="relative aspect-video cursor-pointer transition-transform hover:scale-105"
             onClick={() => openCarousel(index)}
           >
+            {!loadedImages[image] && (
+              <div className="absolute inset-0 flex items-center justify-center bg-gray-100 rounded-lg">
+                <div className="loading-spinner"></div>
+              </div>
+            )}
             <Image
               src={image}
               alt={`${project.title} screenshot ${index + 1}`}
               fill
-              className="object-cover rounded-lg border border-gray-200"
+              className={`object-cover rounded-lg border border-gray-200 ${loadedImages[image] ? 'image-fade-in' : 'opacity-0'}`}
+              onLoadingComplete={() => setLoadedImages(prev => ({ ...prev, [image]: true }))}
             />
           </div>
         ))}
