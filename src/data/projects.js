@@ -82,7 +82,7 @@ export const projects = [
       '/screenshots/Daily Angel - 2.png',
       '/screenshots/Daily Angel - 3.png',
       '/screenshots/Daily Angel - 4.png',
-      '/screenshots/Daily Angel - 5.png'
+    //   '/screenshots/Daily Angel - 5.png'
     ],
     contribution: "A personalized AI accountability coach that checks in with you over email 3 times a day to make sure you’re on track toward your goals.<br/><br/> Includes an RPG-style profile card that gamifies what you're working on. Deployed with React, Flask, Digital Ocean, OpenRouter, nginx, gunicorn, Stripe, SendGrid.",
     links: [

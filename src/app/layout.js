@@ -1,7 +1,11 @@
-import { Inter } from 'next/font/google'
+import { DM_Sans } from 'next/font/google'
 import './globals.css'
+import PageTransition from './components/PageTransition'
 
-const inter = Inter({ subsets: ['latin'] })
+const dmSans = DM_Sans({ 
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+})
 
 export const metadata = {
   title: "Zakir's Portfolio",
@@ -19,10 +23,12 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2" />
         <link rel="manifest" href="/site.webmanifest?v=2" />
       </head>
-      <body className={`${inter.className} bg-gray-50 min-h-screen`}>
-        <main className="container mx-auto px-4 py-8">
-          {children}
-        </main>
+      <body className={`${dmSans.className} min-h-screen`}>
+        <PageTransition>
+          <main className="container mx-auto px-4 py-8">
+            {children}
+          </main>
+        </PageTransition>
       </body>
     </html>
   )

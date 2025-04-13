@@ -6,8 +6,8 @@ import { metadata } from './layout'
 export default function Home() {
   return (
     <div className="space-y-8">
-      <header className="text-center py-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Zakir's Portfolio</h1>
+      <header className="text-center py-4">
+        <h1 className="text-4xl font-bold text-black mb-4">Zakir's Portfolio</h1>
         <p className="text-lg text-gray-500">{metadata.subtitle}</p>
         <p className="text-lg text-gray-500">Below are software projects that I've built or contributed to.</p>
         {/* <p className="text-xl text-gray-600 mb-2">Software projects that I've built or contributed to</p> */}
@@ -21,7 +21,7 @@ export default function Home() {
             key={project.id}
             className="group h-full"
           >
-            <div className="bg-white rounded-lg border border-gray-200 overflow-hidden transition-transform duration-300 group-hover:scale-110 flex flex-col h-full">
+            <div className="bg-white rounded-sm border border-gray-200 overflow-hidden transition-transform duration-300 group-hover:scale-110 flex flex-col h-full">
               <div className="relative h-48 w-full">
                 <Image
                   src={project.mainImage}
