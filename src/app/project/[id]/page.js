@@ -68,7 +68,7 @@ export default function ProjectPage({ params }) {
         href="/"
         className="inline-flex items-center text-gray-600 hover:text-gray-900"
       >
-        ← Back to Portfolio
+        ← Back to Projects Page
       </Link>
 
       <header className="space-y-4">
