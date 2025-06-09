@@ -69,7 +69,7 @@ export const projects = [
         </div>
     `,
     links: [
-      { title: 'Video Demo', href: 'https://www.youtube.com/watch?v=Z2GSPQuNvfk&ab_channel=Zaqir' },
+      { title: 'Technical Demo', href: 'https://youtu.be/-cH_U4N0nSw?si=U3xLxx2wcTod0K4W' },
       { title: 'Try OpusMelody', href: 'https://opusmelody.com' }
     ]
   },
@@ -86,8 +86,7 @@ export const projects = [
     ],
     contribution: "A personalized AI accountability coach that checks in with you over email 3 times a day to make sure you’re on track toward your goals.<br/><br/> Includes an RPG-style profile card that gamifies what you're working on. Deployed with React, Flask, Digital Ocean, OpenRouter, nginx, gunicorn, Stripe, SendGrid.",
     links: [
-      { title: 'Video Demo', href: 'dailyangel.me' },
-      { title: 'Daily Angel', href: 'dailyangel.me' },
+      { title: 'Daily Angel', href: 'https://dailyangel.me' },
     ]
   },
   {
