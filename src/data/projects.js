@@ -4,6 +4,7 @@ export const projects = [
     title: 'OpusMelody - Solo Startup',
     description: 'Generative music composition studio with free and paid features. Deployed with Angular, Flask, Python, Digital Ocean, Stripe, Postgres, Google Analytics. 260 unique users, 22 email signups and counting.',
     mainImage: '/screenshots/OpusMelody - 1.png',
+    youtubeVideoId: '-cH_U4N0nSw',
     images: [
       '/screenshots/OpusMelody - 1.png',
       '/screenshots/OpusMelody - 2.png',
@@ -143,6 +144,7 @@ export const projects = [
     title: 'Desert Adventure Z - Solo Project',
     description: 'A side-scrolling platformer built in React',
     mainImage: '/screenshots/Desert Adventure Z - 1.png',
+    youtubeVideoId: 'aR_-RlabYJE',
     images: [
       '/screenshots/Desert Adventure Z - 1.png',
       '/screenshots/Desert Adventure Z - 2.png',
