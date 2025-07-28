@@ -88,15 +88,17 @@ export default function ProjectPage({ params }) {
       {project.youtubeVideoId && (
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-gray-900">Project Video</h2>
-          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-            <iframe
-              className="absolute top-0 left-0 w-full h-full rounded-lg border border-gray-200"
-              src={`https://www.youtube.com/embed/${project.youtubeVideoId}`}
-              title={`${project.title} Video`}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+          <div className="max-w-[1100px] mx-auto">
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-lg border border-gray-200"
+                src={`https://www.youtube.com/embed/${project.youtubeVideoId}`}
+                title={`${project.title} Video`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
       )}
