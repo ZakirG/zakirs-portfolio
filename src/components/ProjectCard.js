@@ -29,10 +29,13 @@ export default function ProjectCard({ project }) {
                 </p>
               </div>
               
-              {/* Tech Stack or Type Badge */}
-               <div className="text-right">
+              {/* Project Type and Year Badges */}
+               <div className="text-right flex flex-col gap-2">
                  <div className="inline-flex items-center px-4 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 whitespace-nowrap">
                    {project.projectType}
+                 </div>
+                 <div className="inline-flex items-center px-4 py-1 rounded-full text-xs font-medium bg-green-200 whitespace-nowrap font-bold">
+                   {project.year}
                  </div>
                </div>
             </div>
@@ -64,7 +67,7 @@ export default function ProjectCard({ project }) {
           {/* Project Description */}
           <div>
             <p className="text-gray-700 text-sm leading-relaxed">
-              {project.description || project.contribution?.replace(/<br\/>/g, ' ').replace(/<[^>]*>/g, '')}
+              {(project.description || project.contribution)?.replace(/<br\/>/g, ' ').replace(/<[^>]*>/g, '')}
             </p>
           </div>
 

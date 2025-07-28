@@ -4,6 +4,7 @@ export const projects = [
     title: 'FotoFun',
     subtitle: 'Photoshop Clone with AI Agent',
     projectType: 'In a Team of 3',
+    year: '2025',
     description: 'Cursor for Image Editing. It\'s a Photoshop clone with an AI agent that can use any tool in the toolbar, generate images, do AI inpainting, and more. The AI agent has access to sequential processing via the Vercel AI SDK -- it can make up to 10 tool calls back to back from one prompt.',
     mainImage: '/screenshots/FotoFun - 1.png',
     youtubeVideoId: 'fCd3eHwUgUg',
@@ -11,7 +12,7 @@ export const projects = [
     images: [
       '/screenshots/FotoFun - 1.png'
     ],
-    contribution: 'Cursor for Image Editing. It\'s a Photoshop clone with an AI agent that can use any tool in the toolbar, generate images, do AI inpainting, and more. The AI agent has access to sequential processing via the Vercel AI SDK -- it can make up to 10 tool calls back to back from one prompt.',
+    contribution: '',
     links: [
       { title: 'Video Demo', href: 'https://youtu.be/fCd3eHwUgUg' }
     ]
@@ -21,6 +22,7 @@ export const projects = [
     title: 'StickyBrain',
     subtitle: 'RAG Tool for Mac Sticky Notes',
     projectType: 'Solo Project',
+    year: '2025',
     description: 'A Mac desktop app built with Electron, LangGraph agents, and ChromaDB. It runs autonomous web research and RAG on your Mac Sticky notes in real-time while you type, reminding you of your old related writings and offering ideas from the internet automatically.',
     mainImage: '/screenshots/StickyBrain - 1.png',
     youtubeVideoId: '92u0H6ObBCE',
@@ -28,7 +30,7 @@ export const projects = [
     images: [
       '/screenshots/StickyBrain - 1.png'
     ],
-    contribution: 'A Mac desktop app built with Electron, LangGraph agents, and ChromaDB. It runs autonomous web research and RAG on your Mac Sticky notes in real-time while you type, reminding you of your old related writings and offering ideas from the internet automatically.',
+    contribution: '',
     links: [
       { title: 'Video Demo', href: 'https://youtu.be/92u0H6ObBCE' }
     ]
@@ -38,10 +40,11 @@ export const projects = [
     title: 'OpusMelody',
     subtitle: 'Digital Audio Workstation with AI Agent',
     projectType: 'Solo Startup',
-    description: 'Generative music composition studio with free and paid features. Deployed with Angular, Flask, Python, Digital Ocean, Stripe, Postgres, Google Analytics. 260 unique users, 22 email signups and counting.',
+    year: '2025',
+    description: 'Digital audio workstation with a suite of intelligent music generation algorithms and an AI agent capable of tool use. Angular, TypeScript, Flask, Python, Stripe, OpenRouter, Digital Ocean. 260+ unique users, 22 email signups and counting.',
     mainImage: '/screenshots/OpusMelody - 1.png',
     youtubeVideoId: '-cH_U4N0nSw',
-    technologies: ['Angular', 'Flask', 'Python', 'Digital Ocean', 'Stripe', 'PostgreSQL', 'Google Analytics', 'MIDI Processing'],
+    technologies: ['Angular', 'Flask', 'Python 3', 'Digital Ocean', 'Stripe', 'PostgreSQL', 'Google Analytics', 'GPT-4.1-mini via OpenRouter'],
     images: [
       '/screenshots/OpusMelody - 1.png',
       '/screenshots/OpusMelody - 2.png',
@@ -116,6 +119,7 @@ export const projects = [
     title: 'ViralVision',
     subtitle: 'AI-Powered Rewrites for Viral Video Scripts',
     projectType: 'Solo Project',
+    year: '2025',
     description: 'ViralVision is an AI-powered text editor for video scripts. It can generate a script or tweak an existing one by scraping Tik Tok, write a viral hook for it, offer revisions, and propose ideas for onscreen text and delivery with readable diffs. Built with Cursor Agent and v0 in < 6 days.',
     mainImage: '/screenshots/ViralVision - 1.png',
     youtubeVideoId: 'RfR83zXjbhA',
@@ -133,6 +137,7 @@ export const projects = [
     title: 'Daily Angel',
     subtitle: 'Personalized AI Accountability Coach',
     projectType: 'Solo Startup',
+    year: '2024',
     mainImage: '/screenshots/Daily Angel - 1.png',
     technologies: ['React', 'Flask', 'Digital Ocean', 'OpenRouter', 'nginx', 'gunicorn', 'Stripe', 'SendGrid'],
     images: [
@@ -142,7 +147,8 @@ export const projects = [
       '/screenshots/Daily Angel - 4.png',
     //   '/screenshots/Daily Angel - 5.png'
     ],
-    contribution: "A personalized AI accountability coach that checks in with you over email 3 times a day to make sure you’re on track toward your goals.<br/><br/> Includes an RPG-style profile card that gamifies what you're working on. Deployed with React, Flask, Digital Ocean, OpenRouter, nginx, gunicorn, Stripe, SendGrid.",
+    description: "A personalized AI accountability coach that checks in with you over email 3 times a day to make sure you’re on track toward your goals.<br/><br/> Includes an RPG-style profile card that gamifies what you're working on. Deployed with React, Flask, Digital Ocean, OpenRouter, nginx, gunicorn, Stripe, SendGrid.",
+    contribution: "",
     links: [
       { title: 'Daily Angel', href: 'https://dailyangel.me' },
     ]
@@ -150,11 +156,12 @@ export const projects = [
   {
     id: 'ctds',
     title: 'CTDS Data Portal',
-    subtitle: 'Healthcare Data',
+    subtitle: 'Data Portal for Bioinformaticians',
     projectType: 'In a Team of 8',
+    year: '2022',
     // description: 'A React data portal for visualizing patient data. Built for the Center for Translational Data Science at the University of Chicago. I contributed new filters and filter-sharing features to the dashboard while working in a team of 8.',
     mainImage: '/screenshots/CTDS - 1.png',
-    technologies: ['React', 'JavaScript', 'CSS', 'Data Visualization', 'Patient Data', 'Jupyter Notebook', 'Export Tools', 'Security'],
+    technologies: ['React', 'CSS', 'Jupyter Notebooks', 'Golang', 'Elasticsearch', 'PostgreSQL'],
     images: [
       '/screenshots/CTDS - 1.png',
       '/screenshots/CTDS - 2.png'
@@ -183,12 +190,35 @@ export const projects = [
     `,
   },
   {
+    id: 'desert-adventure-z',
+    title: 'Desert Adventure Z',
+    subtitle: 'React Game',
+    projectType: 'Solo Project',
+    year: '2022',
+    // hidden: true,
+    description: 'A side-scrolling platformer built in React',
+    mainImage: '/screenshots/Desert Adventure Z - 1.png',
+    youtubeVideoId: 'aR_-RlabYJE',
+    technologies: ['React', 'CSS'],
+    images: [
+      '/screenshots/Desert Adventure Z - 1.png',
+      '/screenshots/Desert Adventure Z - 2.png',
+      '/screenshots/Desert Adventure Z - 3.png',
+    ],
+    description: 'A short desert adventure game written with React functional components. We shift sprite sheets rapidly to create the illusion of animation.',
+    links: [
+      { title: 'Video Demo', href: 'https://www.youtube.com/watch?v=aR_-RlabYJE' },
+      { title: 'GitHub', href: 'https://github.com/ZakirG/desert-adventure-z' },
+    ]
+  },
+  {
     id: 'athena',
     title: 'BitQuick.co',
     subtitle: 'UI Overhaul for Bitcoin Exchange',
     projectType: 'In a Team of 3',
+    year: '2018',
     mainImage: '/screenshots/Athena - 1.png',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Flat Design', 'Custom UI', 'Bitcoin API', 'Responsive Design', 'CSS Transitions'],
+    technologies: ['PHP', 'MySQL', 'AWS'],
     images: [
         '/screenshots/Athena - 1.png',
         '/screenshots/Athena - 2.png',
@@ -197,43 +227,26 @@ export const projects = [
         '/screenshots/Athena - 5.png',
         '/screenshots/Athena - 6.png'
     ],
-    contribution: 'At Athena Bitcoin, I served as lead designer and lead developer to redesign BitQuick.co, applying a flat design aesthetic, custom inputs and checkboxes with on-change side effects, and dynamic tools with smooth CSS transitions. <br/><br/>I completed this work in 2018. Bitquick.co is no longer live.',
+    description: 'At Athena Bitcoin, I served as lead designer and lead developer to redesign BitQuick.co, applying a flat design aesthetic, custom inputs and checkboxes with on-change side effects, and dynamic tools with smooth CSS transitions. <br/><br/>I completed this work in 2018. Bitquick.co is no longer live.',
     links: [
       { title: 'Athena Bitcoin company site', href: 'https://athenabitcoin.com/' },
     ]
   },
-  {
-    id: 'desert-adventure-z',
-    title: 'Desert Adventure Z',
-    subtitle: 'React Game',
-    projectType: 'Solo Project',
-    description: 'A side-scrolling platformer built in React',
-    mainImage: '/screenshots/Desert Adventure Z - 1.png',
-    youtubeVideoId: 'aR_-RlabYJE',
-    technologies: ['React', 'JavaScript', 'CSS', 'Sprite Animation', 'Game Development', 'Functional Components', 'Canvas', 'CSS Animation'],
-    images: [
-      '/screenshots/Desert Adventure Z - 1.png',
-      '/screenshots/Desert Adventure Z - 2.png',
-      '/screenshots/Desert Adventure Z - 3.png',
-    ],
-    contribution: 'A short desert adventure game written with React functional components. We shift sprite sheets rapidly to create the illusion of animation.',
-    links: [
-      { title: 'Video Demo', href: 'https://www.youtube.com/watch?v=aR_-RlabYJE' },
-      { title: 'GitHub', href: 'https://github.com/ZakirG/desert-adventure-z' },
-    ]
-  },
+  
   {
     id: 'graphing-calculator',
     title: 'Elm Graphing Calculator',
     subtitle: 'Functional Programming',
     projectType: 'In a Team of 2',
-    description: 'An interactive graphing calculator written in Elm',
+    year: '2016',
+    // hidden: true,
+    description: 'An interactive graphing calculator written in Elm. This was a class project meant to serve as practice for functional programming. I built the frontend and parts of the backend, working in a team of 2. <br/><br/>Using functional programming with Elm draw the interface was a quirky choice; no CSS was used in the project.',
     mainImage: '/screenshots/Graphing Calculator - 1.png',
-    technologies: ['Elm', 'Functional Programming', 'Mathematical Parsing', 'Graphics', 'Recursion', 'SVG', 'Custom Parser', 'No CSS'],
+    technologies: ['Elm'],
     images: [
       '/screenshots/Graphing Calculator - 1.png'
     ],
-    contribution: 'This was a class project meant to serve as practice for functional programming. I built the frontend and parts of the backend, working in a team of 2. <br/><br/>Using functional programming with Elm draw the interface was a quirky choice; no CSS was used in the project.',
+    contribution: '',
     contributionHTML: `
         <ul>
           <li>A custom recursive parsing system that respects parentheses and the order of operations</li>

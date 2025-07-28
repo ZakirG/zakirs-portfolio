@@ -18,14 +18,19 @@ export default function Home() {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
-        <p className="text-lg text-gray-500">{metadata.subtitle}</p>
+        <p className="text-lg text-gray-500">
+          <a href="https://www.linkedin.com/in/zakir-g-8976a511/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline">
+            Zakir Gowani
+          </a>
+          {' '}is a full-stack software engineer with 8+ years of professional experience.
+        </p>
         <p className="text-lg text-gray-500">Below are software projects that I've built or contributed to.</p>
         {/* <p className="text-xl text-gray-600 mb-2">Software projects that I've built or contributed to</p> */}
 
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project) => (
+        {projects.filter(project => !project.hidden).map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
