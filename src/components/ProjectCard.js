@@ -6,13 +6,15 @@ export default function ProjectCard({ project }) {
     <Link href={`/project/${project.id}`} className="group block">
       <div className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1 h-full">
         {/* Project Image */}
-        <div className="relative h-48 w-full bg-gray-100">
-          <Image
-            src={project.mainImage}
-            alt={project.title}
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
-          />
+        <div className="p-1.5">
+          <div className="relative h-48 w-full bg-gray-100 rounded-lg overflow-hidden">
+            <Image
+              src={project.mainImage}
+              alt={project.title}
+              fill
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
         </div>
         
                 {/* Card Content */}
@@ -31,10 +33,10 @@ export default function ProjectCard({ project }) {
               
               {/* Project Type and Year Badges */}
                <div className="text-right flex flex-col gap-2">
-                 <div className="inline-flex items-center px-4 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 whitespace-nowrap">
+                 <div className="inline-flex items-center px-4 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 whitespace-nowrap">
                    {project.projectType}
                  </div>
-                 <div className="inline-flex items-center px-4 py-1 rounded-full text-xs font-medium bg-green-200 whitespace-nowrap font-bold">
+                 <div className="inline-flex items-center px-4 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-green-200 to-green-300 whitespace-nowrap font-bold">
                    {project.year}
                  </div>
                </div>

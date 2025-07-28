@@ -1,9 +1,9 @@
-import { DM_Sans } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import PageTransition from './components/PageTransition'
 import { AuroraBackground } from '@/components/ui/aurora-background'
 
-const dmSans = DM_Sans({ 
+const inter = Inter({ 
   subsets: ['latin'],
   weight: ['400', '500', '700'],
 })
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2" />
         <link rel="manifest" href="/site.webmanifest?v=2" />
       </head>
-      <body className={`${dmSans.className}`}>
+      <body className={`${inter.className}`}>
         <AuroraBackground>
           <PageTransition>
             <div className="container mx-auto px-4 py-8 relative z-10">
