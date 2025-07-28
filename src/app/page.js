@@ -30,8 +30,13 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <div className="p-6 flex-grow flex items-center justify-center">
-                <h2 className="text-xl font-semibold text-gray-900 text-center">{project.title}</h2>
+              <div className="p-6 flex-grow flex flex-col justify-center">
+                <h2 className="text-xl font-semibold text-gray-900 text-center mb-2">{project.title}</h2>
+                {(project.description || project.contribution) && (
+                  <p className="text-sm text-gray-600 text-center">
+                    {project.description || project.contribution?.replace(/<br\/>/g, ' ').replace(/<[^>]*>/g, '')}
+                  </p>
+                )}
               </div>
             </div>
           </Link>
