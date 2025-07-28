@@ -1,5 +1,47 @@
 export const projects = [
   {
+    id: 'fotofun',
+    title: 'FotoFun - Team of 3',
+    description: 'Cursor for Image Editing. It\'s a Photoshop clone with an AI agent that can use any tool in the toolbar, generate images, do AI inpainting, and more. The AI agent has access to sequential processing via the Vercel AI SDK -- it can make up to 10 tool calls back to back from one prompt.',
+    mainImage: '/screenshots/FotoFun - 1.png',
+    youtubeVideoId: 'fCd3eHwUgUg',
+    images: [
+      '/screenshots/FotoFun - 1.png'
+    ],
+    contribution: 'Cursor for Image Editing. It\'s a Photoshop clone with an AI agent that can use any tool in the toolbar, generate images, do AI inpainting, and more. The AI agent has access to sequential processing via the Vercel AI SDK -- it can make up to 10 tool calls back to back from one prompt.',
+    links: [
+      { title: 'Video Demo', href: 'https://youtu.be/fCd3eHwUgUg' }
+    ]
+  },
+  {
+    id: 'stickybrain',
+    title: 'StickyBrain - Solo Project',
+    description: 'A Mac desktop app built with Electron, LangGraph agents, and ChromaDB. It runs autonomous web research and RAG on your Mac Sticky notes in real-time while you type, reminding you of your old related writings and offering ideas from the internet automatically.',
+    mainImage: '/screenshots/StickyBrain - 1.png',
+    youtubeVideoId: '92u0H6ObBCE',
+    images: [
+      '/screenshots/StickyBrain - 1.png'
+    ],
+    contribution: 'A Mac desktop app built with Electron, LangGraph agents, and ChromaDB. It runs autonomous web research and RAG on your Mac Sticky notes in real-time while you type, reminding you of your old related writings and offering ideas from the internet automatically.',
+    links: [
+      { title: 'Video Demo', href: 'https://youtu.be/92u0H6ObBCE' }
+    ]
+  },
+  {
+    id: 'viralvision',
+    title: 'ViralVision - Solo Project',
+    description: 'ViralVision is an AI-powered text editor for video scripts. It can generate a script or tweak an existing one by scraping Tik Tok, write a viral hook for it, offer revisions, and propose ideas for onscreen text and delivery with readable diffs. Built with Cursor Agent and v0 in < 6 days.',
+    mainImage: '/screenshots/ViralVision - 1.png',
+    youtubeVideoId: 'RfR83zXjbhA',
+    images: [
+      '/screenshots/ViralVision - 1.png'
+    ],
+    contribution: 'ViralVision is an AI-powered text editor for video scripts. It can generate a script or tweak an existing one by scraping Tik Tok, write a viral hook for it, offer revisions, and propose ideas for onscreen text and delivery with readable diffs. Built with Cursor Agent and v0 in < 6 days.',
+    links: [
+      { title: 'Video Demo', href: 'https://youtu.be/RfR83zXjbhA' }
+    ]
+  },
+  {
     id: 'opus-melody',
     title: 'OpusMelody - Solo Startup',
     description: 'Generative music composition studio with free and paid features. Deployed with Angular, Flask, Python, Digital Ocean, Stripe, Postgres, Google Analytics. 260 unique users, 22 email signups and counting.',
