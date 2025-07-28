@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #dbf6ff;
   color: black;
-  min-height: 100vh;
 }
 
 .page-transition-wrapper {
