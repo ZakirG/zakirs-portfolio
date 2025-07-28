@@ -15,17 +15,10 @@ export default function ProjectCard({ project }) {
           />
         </div>
         
-        {/* Card Content */}
+                {/* Card Content */}
         <div className="p-6">
-          {/* Project Description */}
-          <div className="mb-4">
-            <p className="text-gray-700 text-sm leading-relaxed">
-              {project.description || project.contribution?.replace(/<br\/>/g, ' ').replace(/<[^>]*>/g, '')}
-            </p>
-          </div>
-          
           {/* Project "Author" Info */}
-          <div className="border-t border-gray-100 pt-4">
+          <div className="mb-4">
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="font-semibold text-gray-900 text-lg">
@@ -44,7 +37,7 @@ export default function ProjectCard({ project }) {
                 </p>
               </div>
               
-                             {/* Tech Stack or Type Badge */}
+              {/* Tech Stack or Type Badge */}
                <div className="text-right">
                  <div className="inline-flex items-center px-4 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 whitespace-nowrap">
                    {project.id.includes('solo') || project.title.includes('Solo') ? 'Solo Project' : 
@@ -55,6 +48,15 @@ export default function ProjectCard({ project }) {
             </div>
           </div>
           
+          {/* Horizontal Divider */}
+          <div className="border-t border-gray-100 pt-4 mb-4"></div>
+          
+          {/* Project Description */}
+          <div>
+            <p className="text-gray-700 text-sm leading-relaxed">
+              {project.description || project.contribution?.replace(/<br\/>/g, ' ').replace(/<[^>]*>/g, '')}
+            </p>
+          </div>
 
         </div>
       </div>
