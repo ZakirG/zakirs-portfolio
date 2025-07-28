@@ -1,10 +1,13 @@
 export const projects = [
   {
     id: 'fotofun',
-    title: 'FotoFun - Team of 3',
+    title: 'FotoFun',
+    subtitle: 'Photoshop Clone with AI Agent',
+    projectType: 'In a Team of 3',
     description: 'Cursor for Image Editing. It\'s a Photoshop clone with an AI agent that can use any tool in the toolbar, generate images, do AI inpainting, and more. The AI agent has access to sequential processing via the Vercel AI SDK -- it can make up to 10 tool calls back to back from one prompt.',
     mainImage: '/screenshots/FotoFun - 1.png',
     youtubeVideoId: 'fCd3eHwUgUg',
+    technologies: ['Replicate API', 'Next.js', 'Vercel AI SDK v5', 'Canvas API', 'TypeScript'],
     images: [
       '/screenshots/FotoFun - 1.png'
     ],
@@ -15,10 +18,13 @@ export const projects = [
   },
   {
     id: 'stickybrain',
-    title: 'StickyBrain - Solo Project',
+    title: 'StickyBrain',
+    subtitle: 'RAG Tool for Mac Sticky Notes',
+    projectType: 'Solo Project',
     description: 'A Mac desktop app built with Electron, LangGraph agents, and ChromaDB. It runs autonomous web research and RAG on your Mac Sticky notes in real-time while you type, reminding you of your old related writings and offering ideas from the internet automatically.',
     mainImage: '/screenshots/StickyBrain - 1.png',
     youtubeVideoId: '92u0H6ObBCE',
+    technologies: ['Electron', 'LangGraph', 'ChromaDB', 'Retrieval Augmented Generation', 'React'],
     images: [
       '/screenshots/StickyBrain - 1.png'
     ],
@@ -28,25 +34,14 @@ export const projects = [
     ]
   },
   {
-    id: 'viralvision',
-    title: 'ViralVision - Solo Project',
-    description: 'ViralVision is an AI-powered text editor for video scripts. It can generate a script or tweak an existing one by scraping Tik Tok, write a viral hook for it, offer revisions, and propose ideas for onscreen text and delivery with readable diffs. Built with Cursor Agent and v0 in < 6 days.',
-    mainImage: '/screenshots/ViralVision - 1.png',
-    youtubeVideoId: 'RfR83zXjbhA',
-    images: [
-      '/screenshots/ViralVision - 1.png'
-    ],
-    contribution: 'ViralVision is an AI-powered text editor for video scripts. It can generate a script or tweak an existing one by scraping Tik Tok, write a viral hook for it, offer revisions, and propose ideas for onscreen text and delivery with readable diffs. Built with Cursor Agent and v0 in < 6 days.',
-    links: [
-      { title: 'Video Demo', href: 'https://youtu.be/RfR83zXjbhA' }
-    ]
-  },
-  {
     id: 'opus-melody',
-    title: 'OpusMelody - Solo Startup',
+    title: 'OpusMelody',
+    subtitle: 'Digital Audio Workstation with AI Agent',
+    projectType: 'Solo Startup',
     description: 'Generative music composition studio with free and paid features. Deployed with Angular, Flask, Python, Digital Ocean, Stripe, Postgres, Google Analytics. 260 unique users, 22 email signups and counting.',
     mainImage: '/screenshots/OpusMelody - 1.png',
     youtubeVideoId: '-cH_U4N0nSw',
+    technologies: ['Angular', 'Flask', 'Python', 'Digital Ocean', 'Stripe', 'PostgreSQL', 'Google Analytics', 'MIDI Processing'],
     images: [
       '/screenshots/OpusMelody - 1.png',
       '/screenshots/OpusMelody - 2.png',
@@ -117,9 +112,29 @@ export const projects = [
     ]
   },
   {
+    id: 'viralvision',
+    title: 'ViralVision',
+    subtitle: 'AI-Powered Rewrites for Viral Video Scripts',
+    projectType: 'Solo Project',
+    description: 'ViralVision is an AI-powered text editor for video scripts. It can generate a script or tweak an existing one by scraping Tik Tok, write a viral hook for it, offer revisions, and propose ideas for onscreen text and delivery with readable diffs. Built with Cursor Agent and v0 in < 6 days.',
+    mainImage: '/screenshots/ViralVision - 1.png',
+    youtubeVideoId: 'RfR83zXjbhA',
+    technologies: ['React', 'TikTok API', 'OpenAI', 'Cursor Agent', 'v0', 'JavaScript', 'Web Scraping', 'AI Text Generation'],
+    images: [
+      '/screenshots/ViralVision - 1.png'
+    ],
+    contribution: 'ViralVision is an AI-powered text editor for video scripts. It can generate a script or tweak an existing one by scraping Tik Tok, write a viral hook for it, offer revisions, and propose ideas for onscreen text and delivery with readable diffs. Built with Cursor Agent and v0 in < 6 days.',
+    links: [
+      { title: 'Video Demo', href: 'https://youtu.be/RfR83zXjbhA' }
+    ]
+  },
+  {
     id: 'daily-angel',
-    title: 'Daily Angel - Solo Startup',
+    title: 'Daily Angel',
+    subtitle: 'Personalized AI Accountability Coach',
+    projectType: 'Solo Startup',
     mainImage: '/screenshots/Daily Angel - 1.png',
+    technologies: ['React', 'Flask', 'Digital Ocean', 'OpenRouter', 'nginx', 'gunicorn', 'Stripe', 'SendGrid'],
     images: [
       '/screenshots/Daily Angel - 1.png',
       '/screenshots/Daily Angel - 2.png',
@@ -134,9 +149,12 @@ export const projects = [
   },
   {
     id: 'ctds',
-    title: 'CTDS Data Portal - In a Team of 8',
+    title: 'CTDS Data Portal',
+    subtitle: 'Healthcare Data',
+    projectType: 'In a Team of 8',
     // description: 'A React data portal for visualizing patient data. Built for the Center for Translational Data Science at the University of Chicago. I contributed new filters and filter-sharing features to the dashboard while working in a team of 8.',
     mainImage: '/screenshots/CTDS - 1.png',
+    technologies: ['React', 'JavaScript', 'CSS', 'Data Visualization', 'Patient Data', 'Jupyter Notebook', 'Export Tools', 'Security'],
     images: [
       '/screenshots/CTDS - 1.png',
       '/screenshots/CTDS - 2.png'
@@ -166,8 +184,11 @@ export const projects = [
   },
   {
     id: 'athena',
-    title: 'BitQuick.co - as Lead Designer, Team of 3',
+    title: 'BitQuick.co',
+    subtitle: 'UI Overhaul for Bitcoin Exchange',
+    projectType: 'In a Team of 3',
     mainImage: '/screenshots/Athena - 1.png',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Flat Design', 'Custom UI', 'Bitcoin API', 'Responsive Design', 'CSS Transitions'],
     images: [
         '/screenshots/Athena - 1.png',
         '/screenshots/Athena - 2.png',
@@ -183,10 +204,13 @@ export const projects = [
   },
   {
     id: 'desert-adventure-z',
-    title: 'Desert Adventure Z - Solo Project',
+    title: 'Desert Adventure Z',
+    subtitle: 'React Game',
+    projectType: 'Solo Project',
     description: 'A side-scrolling platformer built in React',
     mainImage: '/screenshots/Desert Adventure Z - 1.png',
     youtubeVideoId: 'aR_-RlabYJE',
+    technologies: ['React', 'JavaScript', 'CSS', 'Sprite Animation', 'Game Development', 'Functional Components', 'Canvas', 'CSS Animation'],
     images: [
       '/screenshots/Desert Adventure Z - 1.png',
       '/screenshots/Desert Adventure Z - 2.png',
@@ -200,9 +224,12 @@ export const projects = [
   },
   {
     id: 'graphing-calculator',
-    title: 'Elm Graphing Calculator - Class Project, Team of 2',
+    title: 'Elm Graphing Calculator',
+    subtitle: 'Functional Programming',
+    projectType: 'In a Team of 2',
     description: 'An interactive graphing calculator written in Elm',
     mainImage: '/screenshots/Graphing Calculator - 1.png',
+    technologies: ['Elm', 'Functional Programming', 'Mathematical Parsing', 'Graphics', 'Recursion', 'SVG', 'Custom Parser', 'No CSS'],
     images: [
       '/screenshots/Graphing Calculator - 1.png'
     ],

@@ -10,7 +10,7 @@ const dmSans = DM_Sans({
 
 export const metadata = {
   title: "Zakir's Portfolio",
-  subtitle: "Zakir Gowani is a full-stack software engineer with 7+ years of experience.",
+  subtitle: "Zakir Gowani is a full-stack software engineer with 8+ years of professional experience.",
   description: "Zakir Gowani's portfolio of software projects",
 }
 

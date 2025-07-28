@@ -25,31 +25,41 @@ export default function ProjectCard({ project }) {
                   {project.title}
                 </h3>
                 <p className="text-gray-500 text-sm">
-                  {project.id === 'opus-melody' && '260+ Users'}
-                  {project.id === 'daily-angel' && 'AI-Powered'}
-                  {project.id === 'ctds' && 'Healthcare Data'}
-                  {project.id === 'athena' && 'Bitcoin Exchange'}
-                  {project.id === 'desert-adventure-z' && 'React Game'}
-                  {project.id === 'graphing-calculator' && 'Functional Programming'}
-                  {project.id === 'fotofun' && 'AI Image Editor'}
-                  {project.id === 'stickybrain' && 'AI Research Assistant'}
-                  {project.id === 'viralvision' && 'TikTok Script Generator'}
+                  {project.subtitle}
                 </p>
               </div>
               
               {/* Tech Stack or Type Badge */}
                <div className="text-right">
                  <div className="inline-flex items-center px-4 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 whitespace-nowrap">
-                   {project.id.includes('solo') || project.title.includes('Solo') ? 'Solo Project' : 
-                    project.title.includes('Team') ? 'Team Project' : 
-                    'Collaboration'}
+                   {project.projectType}
                  </div>
                </div>
             </div>
           </div>
           
           {/* Horizontal Divider */}
-          <div className="border-t border-gray-100 pt-4 mb-4"></div>
+          <div className="border-t border-gray-100 mb-4"></div>
+          
+          {/* Technologies Section */}
+          {project.technologies && (
+            <>
+              <div className="mb-4">
+                <h4 className="text-sm font-semibold text-gray-900 mb-3">Technologies</h4>
+                <div className="grid grid-cols-2 gap-x-4">
+                  {project.technologies.map((tech, index) => (
+                    <div key={index} className="flex items-center text-xs text-gray-600 mb-1">
+                      <span className="mr-2">•</span>
+                      {tech}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+                             {/* Horizontal Divider */}
+               <div className="border-t border-gray-100 mb-4"></div>
+            </>
+          )}
           
           {/* Project Description */}
           <div>
