@@ -125,7 +125,9 @@ export default function ProjectPage({ params }) {
         </div>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="space-y-4">
+        <h2 className="text-xl font-semibold text-gray-900">Project Images</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {project.images.map((image, index) => (
           <div 
             key={index} 
@@ -146,6 +148,7 @@ export default function ProjectPage({ params }) {
             />
           </div>
         ))}
+        </div>
       </div>
       
       {project.contributionHTML && (

@@ -14,7 +14,8 @@ export const projects = [
     ],
     contribution: '',
     links: [
-      { title: 'Video Demo', href: 'https://youtu.be/fCd3eHwUgUg' }
+      { title: 'Video Demo', href: 'https://youtu.be/fCd3eHwUgUg' },
+      { title: 'GitHub Repository', href: 'https://github.com/gauntletai-p4-pointer/foto-fun/' }
     ]
   },
   {
@@ -28,11 +29,13 @@ export const projects = [
     youtubeVideoId: '92u0H6ObBCE',
     technologies: ['Electron', 'LangGraph', 'ChromaDB', 'Retrieval Augmented Generation', 'React'],
     images: [
-      '/screenshots/StickyBrain - 1.png'
+      '/screenshots/StickyBrain - 1.png',
+      '/screenshots/StickyBrain - 2.png'
     ],
     contribution: '',
     links: [
-      { title: 'Video Demo', href: 'https://youtu.be/92u0H6ObBCE' }
+      { title: 'Video Demo', href: 'https://youtu.be/92u0H6ObBCE' },
+      { title: 'GitHub Repository', href: 'https://github.com/ZakirG/StickyBrain' }
     ]
   },
   {
@@ -129,7 +132,8 @@ export const projects = [
     ],
     contribution: 'ViralVision is an AI-powered text editor for video scripts. It can generate a script or tweak an existing one by scraping Tik Tok, write a viral hook for it, offer revisions, and propose ideas for onscreen text and delivery with readable diffs. Built with Cursor Agent and v0 in < 6 days.',
     links: [
-      { title: 'Video Demo', href: 'https://youtu.be/RfR83zXjbhA' }
+      { title: 'Video Demo', href: 'https://youtu.be/RfR83zXjbhA' },
+      { title: 'GitHub Repository', href: 'https://github.com/ZakirG/ViralVision' }
     ]
   },
   {
