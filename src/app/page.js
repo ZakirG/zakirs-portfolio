@@ -14,6 +14,8 @@ export default function Home() {
             width={300}
             height={80}
             className="h-auto max-w-md"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
         <p className="text-lg text-gray-500">{metadata.subtitle}</p>

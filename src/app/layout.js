@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="preload" as="image" href="/logo-1.png" type="image/png" />
         <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2" />
