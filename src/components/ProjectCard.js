@@ -14,6 +14,21 @@ export default function ProjectCard({ project }) {
               fill
               className="object-cover transition-transform duration-300 group-hover:scale-105"
             />
+            {/* Play Button Overlay - Only show if project has video */}
+            {project.youtubeVideoId && (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="bg-black bg-opacity-60 rounded-full p-3 transition-all duration-300 group-hover:bg-opacity-80">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="h-8 w-8 text-white" 
+                    fill="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </div>
+            )}
           </div>
         </div>
         
