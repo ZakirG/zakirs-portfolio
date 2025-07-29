@@ -24,10 +24,10 @@ export const projects = [
     subtitle: 'RAG Tool for Mac Sticky Notes',
     projectType: 'Solo Project',
     year: '2025',
-    description: 'A Mac desktop app built with Electron, LangGraph agents, and ChromaDB. It runs autonomous web research and RAG on your Mac Sticky notes in real-time while you type, reminding you of your old related writings and offering ideas from the internet automatically.',
+    description: 'A Mac desktop app built with Electron, LangGraph agents, and ChromaDB. It runs autonomous web research and retrieval-augmented generation on your Mac Sticky notes in real-time while you type, reminding you of your old related writings and offering ideas from the internet automatically.',
     mainImage: '/screenshots/StickyBrain - 1.png',
     youtubeVideoId: '92u0H6ObBCE',
-    technologies: ['Electron', 'LangGraph', 'ChromaDB', 'Retrieval Augmented Generation', 'React'],
+    technologies: ['Electron', 'LangGraph', 'ChromaDB', 'RAG', 'React'],
     images: [
       '/screenshots/StickyBrain - 1.png',
       '/screenshots/StickyBrain - 2.png'
@@ -47,7 +47,7 @@ export const projects = [
     description: 'Digital audio workstation with a suite of intelligent music generation algorithms and an AI agent capable of tool use. Angular, TypeScript, Flask, Python, Stripe, OpenRouter, Digital Ocean. 260+ unique users, 22 email signups and counting.',
     mainImage: '/screenshots/OpusMelody - 1.png',
     youtubeVideoId: '-cH_U4N0nSw',
-    technologies: ['Angular', 'Flask', 'Python 3', 'Digital Ocean', 'Stripe', 'PostgreSQL', 'Google Analytics', 'GPT-4.1-mini via OpenRouter'],
+    technologies: ['Angular', 'Flask', 'Python 3', 'Digital Ocean', 'Stripe', 'PostgreSQL', 'Google Analytics', 'GPT-4.1-mini'],
     images: [
       '/screenshots/OpusMelody - 1.png',
       '/screenshots/OpusMelody - 2.png',

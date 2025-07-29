@@ -11,9 +11,9 @@ export default function Home() {
           <Image
             src="/logo-1.png"
             alt="Zakir's Portfolio"
-            width={300}
-            height={80}
-            className="h-auto max-w-md"
+            width={260}
+            height={67}
+            className="h-auto max-w-sm"
             priority
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
