@@ -19,26 +19,6 @@ export const projects = [
     ]
   },
   {
-    id: 'stickybrain',
-    title: 'StickyBrain',
-    subtitle: 'RAG Tool for Mac Sticky Notes',
-    projectType: 'Solo Project',
-    year: '2025',
-    description: 'A Mac desktop app built with Electron, LangGraph agents, and ChromaDB. It runs autonomous web research and retrieval-augmented generation on your Mac Sticky notes in real-time while you type, reminding you of your old related writings and offering ideas from the internet automatically.',
-    mainImage: '/screenshots/StickyBrain - 1.png',
-    youtubeVideoId: '92u0H6ObBCE',
-    technologies: ['Electron', 'LangGraph', 'ChromaDB', 'RAG', 'React'],
-    images: [
-      '/screenshots/StickyBrain - 1.png',
-      '/screenshots/StickyBrain - 2.png'
-    ],
-    contribution: '',
-    links: [
-      { title: 'Video Demo', href: 'https://youtu.be/92u0H6ObBCE' },
-      { title: 'GitHub Repository', href: 'https://github.com/ZakirG/StickyBrain' }
-    ]
-  },
-  {
     id: 'opus-melody',
     title: 'OpusMelody',
     subtitle: 'Digital Audio Workstation with AI Agent',
@@ -115,6 +95,26 @@ export const projects = [
     links: [
       { title: 'Technical Demo', href: 'https://youtu.be/-cH_U4N0nSw?si=U3xLxx2wcTod0K4W' },
       { title: 'Try OpusMelody', href: 'https://opusmelody.com' }
+    ]
+  },
+  {
+    id: 'stickybrain',
+    title: 'StickyBrain',
+    subtitle: 'RAG Tool for Mac Sticky Notes',
+    projectType: 'Solo Project',
+    year: '2025',
+    description: 'A Mac desktop app built with Electron, LangGraph agents, and ChromaDB. It runs autonomous web research and retrieval-augmented generation on your Mac Sticky notes in real-time while you type, reminding you of your old related writings and offering ideas from the internet automatically.',
+    mainImage: '/screenshots/StickyBrain - 1.png',
+    youtubeVideoId: '92u0H6ObBCE',
+    technologies: ['Electron', 'LangGraph', 'ChromaDB', 'RAG', 'React'],
+    images: [
+      '/screenshots/StickyBrain - 1.png',
+      '/screenshots/StickyBrain - 2.png'
+    ],
+    contribution: '',
+    links: [
+      { title: 'Video Demo', href: 'https://youtu.be/92u0H6ObBCE' },
+      { title: 'GitHub Repository', href: 'https://github.com/ZakirG/StickyBrain' }
     ]
   },
   {
