@@ -123,6 +123,27 @@ export const projects = [
     ]
   },
   {
+    id: 'x-combat',
+    title: 'X-Combat',
+    subtitle: '3D Web Game',
+    projectType: 'Solo Project',
+    year: '2025',
+    description: "Built with Three.js, MeshyAI, Blender, and Mixamo in under 7 days. Play as Grok Ani (she's viral on X) in this slick 3D hack n slash - perform agile combos, wield weapons, and run up your kill streak in this addicting and very violent combat game.",
+    mainImage: '/screenshots/XCombat - 1.png',
+    technologies: ['Three.js', 'Mixamo', 'MeshyAI', 'Blender', 'JavaScript', 'WebGL'],
+    images: [
+      '/screenshots/XCombat - 1.png',
+      '/screenshots/XCombat - 2.png',
+      '/screenshots/XCombat - 3.png'
+    ],
+    youtubeVideoId: 'vJHCOcnWv6k',
+    contribution: '',
+    links: [
+      { title: 'Play the game', href: 'https://x-combat.vercel.app/' },
+      { title: 'Video Demo', href: 'https://www.youtube.com/watch?v=vJHCOcnWv6k' }
+    ]
+  },
+  {
     id: 'viralvision',
     title: 'ViralVision',
     subtitle: 'AI-Powered Rewrites for Viral Video Scripts',
@@ -212,7 +233,7 @@ export const projects = [
   {
     id: 'desert-adventure-z',
     title: 'Desert Adventure Z',
-    subtitle: 'React Game',
+    subtitle: '2D React Game',
     projectType: 'Solo Project',
     year: '2022',
     // hidden: true,
@@ -256,7 +277,7 @@ export const projects = [
   {
     id: 'graphing-calculator',
     title: 'Elm Graphing Calculator',
-    subtitle: 'Functional Programming',
+    subtitle: 'Functional Programming Practice',
     projectType: 'In a Team of 2',
     year: '2016',
     // hidden: true,
