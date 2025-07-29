@@ -21,18 +21,18 @@ export default function ProjectCard({ project }) {
         <div className="p-6">
           {/* Project "Author" Info */}
           <div className="mb-4">
-            <div className="flex items-center justify-between">
-              <div>
+            <div className="flex items-start justify-between">
+              <div className="px-2">
                 <h3 className="font-semibold text-gray-900 text-lg">
                   {project.title}
                 </h3>
-                <p className="text-gray-500 text-sm">
+                <p className="text-gray-500 text-xs">
                   {project.subtitle}
                 </p>
               </div>
               
               {/* Project Type and Year Badges */}
-               <div className="text-right flex flex-col gap-2">
+               <div className="text-right flex flex-col gap-2 px-2">
                  <div className="inline-flex items-center px-4 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 whitespace-nowrap">
                    {project.projectType}
                  </div>

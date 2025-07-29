@@ -73,6 +73,32 @@ export default function ProjectPage({ params }) {
 
       <header className="space-y-4">
         <h1 className="text-4xl font-bold text-gray-900">{project.title}</h1>
+        
+        {/* Project Type and Year Badges */}
+        <div className="flex flex-wrap gap-3">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800">
+            {project.projectType}
+          </div>
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-green-200 to-green-300 font-bold">
+            {project.year}
+          </div>
+        </div>
+
+        {/* Technologies Section */}
+        {project.technologies && (
+          <div>
+            <h4 className="text-sm font-semibold text-gray-900 mb-3">Technologies</h4>
+            <div className="grid grid-cols-2 gap-x-8 gap-y-1 w-fit">
+              {project.technologies.map((tech, index) => (
+                <div key={index} className="flex items-center text-sm text-gray-600">
+                  <span className="mr-2 text-blue-500">•</span>
+                  {tech}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         <p className="text-gray-600">{project.description}</p>
       </header>
 

@@ -2,10 +2,10 @@ export const projects = [
   {
     id: 'fotofun',
     title: 'FotoFun',
-    subtitle: 'Photoshop Clone with AI Agent',
+    subtitle: 'Cursor for Image Editing',
     projectType: 'In a Team of 3',
     year: '2025',
-    description: 'Cursor for Image Editing. It\'s a Photoshop clone with an AI agent that can use any tool in the toolbar, generate images, do AI inpainting, and more. The AI agent has access to sequential processing via the Vercel AI SDK -- it can make up to 10 tool calls back to back from one prompt.',
+    description: "FotoFun is a open-source Photoshop clone with an AI agent that can use any tool in the toolbar, generate images, perform AI inpainting, and more. The AI agent has access to sequential processing via the Vercel AI SDK -- it can make up to 10 tool calls back to back from one prompt. It's like Cursor for image editing.",
     mainImage: '/screenshots/FotoFun - 1.png',
     youtubeVideoId: 'fCd3eHwUgUg',
     technologies: ['Replicate API', 'Next.js', 'Vercel AI SDK v5', 'Canvas API', 'TypeScript'],
@@ -13,6 +13,11 @@ export const projects = [
       '/screenshots/FotoFun - 1.png'
     ],
     contribution: '',
+    contributionHTML: `
+      <div>
+        <p>Built in a team of 3 while at GauntletAI Fellowship. See the GitHub repository for more details.</p>
+      </div>
+    `,
     links: [
       { title: 'Video Demo', href: 'https://youtu.be/fCd3eHwUgUg' },
       { title: 'GitHub Repository', href: 'https://github.com/gauntletai-p4-pointer/foto-fun/' }
@@ -21,13 +26,13 @@ export const projects = [
   {
     id: 'opus-melody',
     title: 'OpusMelody',
-    subtitle: 'Digital Audio Workstation with AI Agent',
-    projectType: 'Solo Startup',
+    subtitle: 'Cursor for Music Composition',
+    projectType: 'Solo Project',
     year: '2025',
-    description: 'Digital audio workstation with a suite of intelligent music generation algorithms and an AI agent capable of tool use. Angular, TypeScript, Flask, Python, Stripe, OpenRouter, Digital Ocean. 260+ unique users, 22 email signups and counting.',
+    description: "OpusMelody is a digital audio workstation (DAW) with an applied music theory engine and an AI agent capable of revising compositions - generating chords, making them bigger/smaller, adding melodies, changing octaves, performing chord inversions, and more. It's like Cursor for music composition. Launched to 260+ unique users, 22 email signups and counting.",
     mainImage: '/screenshots/OpusMelody - 1.png',
     youtubeVideoId: '-cH_U4N0nSw',
-    technologies: ['Angular', 'Flask', 'Python 3', 'Digital Ocean', 'Stripe', 'PostgreSQL', 'Google Analytics', 'GPT-4.1-mini'],
+    technologies: ['Angular', 'Flask', 'Python 3', 'Digital Ocean', 'Stripe', 'PostgreSQL'],
     images: [
       '/screenshots/OpusMelody - 1.png',
       '/screenshots/OpusMelody - 2.png',
@@ -103,7 +108,7 @@ export const projects = [
     subtitle: 'RAG Tool for Mac Sticky Notes',
     projectType: 'Solo Project',
     year: '2025',
-    description: 'A Mac desktop app built with Electron, LangGraph agents, and ChromaDB. It runs autonomous web research and retrieval-augmented generation on your Mac Sticky notes in real-time while you type, reminding you of your old related writings and offering ideas from the internet automatically.',
+    description: "A Mac desktop app built with Electron, LangGraph agents, and ChromaDB. StickyBrain runs autonomous web searches and retrieval-augmented generation on your Mac Sticky notes in real-time while you type in a Sticky note, reminding you of your old related writings and offering ideas from the internet automatically. It's a very helpful brainstorming tool for power users of Mac Sticky notes (me).",
     mainImage: '/screenshots/StickyBrain - 1.png',
     youtubeVideoId: '92u0H6ObBCE',
     technologies: ['Electron', 'LangGraph', 'ChromaDB', 'RAG', 'React'],
@@ -128,7 +133,9 @@ export const projects = [
     youtubeVideoId: 'RfR83zXjbhA',
     technologies: ['React', 'TikTok API', 'OpenAI', 'Cursor Agent', 'v0', 'JavaScript', 'Web Scraping', 'AI Text Generation'],
     images: [
-      '/screenshots/ViralVision - 1.png'
+      '/screenshots/ViralVision - 1.png',
+      '/screenshots/ViralVision - 2.png',
+      '/screenshots/ViralVision - 3.png'
     ],
     contribution: 'ViralVision is an AI-powered text editor for video scripts. It can generate a script or tweak an existing one by scraping Tik Tok, write a viral hook for it, offer revisions, and propose ideas for onscreen text and delivery with readable diffs. Built with Cursor Agent and v0 in < 6 days.',
     links: [
@@ -140,7 +147,7 @@ export const projects = [
     id: 'daily-angel',
     title: 'Daily Angel',
     subtitle: 'Personalized AI Accountability Coach',
-    projectType: 'Solo Startup',
+    projectType: 'Solo Project',
     year: '2024',
     mainImage: '/screenshots/Daily Angel - 1.png',
     technologies: ['React', 'Flask', 'Digital Ocean', 'OpenRouter', 'nginx', 'gunicorn', 'Stripe', 'SendGrid'],
@@ -151,7 +158,7 @@ export const projects = [
       '/screenshots/Daily Angel - 4.png',
     //   '/screenshots/Daily Angel - 5.png'
     ],
-    description: "A personalized AI accountability coach that checks in with you over email 3 times a day to make sure you’re on track toward your goals.<br/><br/> Includes an RPG-style profile card that gamifies what you're working on. Deployed with React, Flask, Digital Ocean, OpenRouter, nginx, gunicorn, Stripe, SendGrid.",
+    description: "A personalized AI accountability coach that checks in with you over email 3 times a day to make sure you’re on track toward your goals. Includes an RPG-style profile card that gamifies what you're working on. Deployed with React, Flask, Digital Ocean, OpenRouter, nginx, gunicorn, Stripe, SendGrid.",
     contribution: "",
     links: [
       { title: 'Daily Angel', href: 'https://dailyangel.me' },
@@ -179,6 +186,8 @@ export const projects = [
       <div>
         <p>I developed React features to visualize, filter, export, and securely share virtual cohorts of patient data, expanding filter functionalities under the direction of PMs and bioinformaticians.</p>
 
+        
+
         <p>UI upgrades I contributed:</p>
         
         <ul>
@@ -190,6 +199,13 @@ export const projects = [
         </ul>
         
         <p>The site shown above is just one of a fleet of parametrizable frontends my contributions affected.</p>
+        
+
+        <p>I also contributed backend features and DevOps infrastructure to support this frontend:
+        <ul>
+          <li>I developed and performance-tested a FUSE filesystem in Golang that lets researchers export protected data from our Data Commons directly into Jupyter notebooks for local analysis.</li>
+          <li>I built a reusable data ingestion pipeline using Bash, Python, and Kubernetes. This pipeline automatically scrapes data files from newly published dbGaP research studies and indexes them into our Postgres database.</li>
+        </ul>
       </div>
     `,
   },
@@ -244,7 +260,7 @@ export const projects = [
     projectType: 'In a Team of 2',
     year: '2016',
     // hidden: true,
-    description: 'An interactive graphing calculator written in Elm. This was a class project meant to serve as practice for functional programming. I built the frontend and parts of the backend, working in a team of 2. <br/><br/>Using functional programming with Elm draw the interface was a quirky choice; no CSS was used in the project.',
+    description: 'An interactive graphing calculator written in Elm. This was a class project meant to serve as practice for functional programming. I built the frontend and parts of the backend, working in a team of 2. <br/><br/>Using functional programming with Elm to draw the interface was a learning exercise; no CSS was used in the project.',
     mainImage: '/screenshots/Graphing Calculator - 1.png',
     technologies: ['Elm'],
     images: [

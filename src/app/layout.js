@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
           </header>
 
           <PageTransition>
-            <div className="container mx-auto px-4 py-8 relative z-10">
+            <div className="container mx-auto px-4 xl:px-2 py-8 relative z-10">
               {children}
             </div>
           </PageTransition>
