@@ -152,13 +152,13 @@ export const projects = [
     description: 'ViralVision is an AI-powered text editor for video scripts. It can generate a script or tweak an existing one by scraping Tik Tok, write a viral hook for it, offer revisions, and propose ideas for onscreen text and delivery with readable diffs. Built with Cursor Agent and v0 in < 6 days.',
     mainImage: '/screenshots/ViralVision - 1.png',
     youtubeVideoId: 'RfR83zXjbhA',
-    technologies: ['React', 'TikTok API', 'OpenAI', 'Cursor Agent', 'v0', 'JavaScript', 'Web Scraping', 'AI Text Generation'],
+    technologies: ['Next.js', 'Slate.js', 'v0'],
     images: [
       '/screenshots/ViralVision - 1.png',
       '/screenshots/ViralVision - 2.png',
       '/screenshots/ViralVision - 3.png'
     ],
-    contribution: 'ViralVision is an AI-powered text editor for video scripts. It can generate a script or tweak an existing one by scraping Tik Tok, write a viral hook for it, offer revisions, and propose ideas for onscreen text and delivery with readable diffs. Built with Cursor Agent and v0 in < 6 days.',
+    contribution: '',
     links: [
       { title: 'Video Demo', href: 'https://youtu.be/RfR83zXjbhA' },
       { title: 'GitHub Repository', href: 'https://github.com/ZakirG/ViralVision' }
@@ -268,7 +268,7 @@ export const projects = [
         '/screenshots/Athena - 5.png',
         '/screenshots/Athena - 6.png'
     ],
-    description: 'At Athena Bitcoin, I served as lead designer and lead developer to redesign BitQuick.co, applying a flat design aesthetic, custom inputs and checkboxes with on-change side effects, and dynamic tools with smooth CSS transitions. <br/><br/>I completed this work in 2018. Bitquick.co is no longer live.',
+    description: 'At Athena Bitcoin, I served as lead designer and lead developer to redesign BitQuick.co, applying a flat design aesthetic, custom inputs and checkboxes with on-change side effects, and dynamic tools with smooth CSS transitions. I completed this work in 2018. Bitquick.co is no longer live.',
     links: [
       { title: 'Athena Bitcoin company site', href: 'https://athenabitcoin.com/' },
     ]
@@ -281,7 +281,7 @@ export const projects = [
     projectType: 'In a Team of 2',
     year: '2016',
     // hidden: true,
-    description: 'An interactive graphing calculator written in Elm. This was a class project meant to serve as practice for functional programming. I built the frontend and parts of the backend, working in a team of 2. <br/><br/>Using functional programming with Elm to draw the interface was a learning exercise; no CSS was used in the project.',
+    description: 'An interactive graphing calculator written in Elm. This was a class project meant to serve as practice for functional programming. I built the frontend and parts of the backend, working in a team of 2. Using functional programming with Elm to draw the interface was a learning exercise; no CSS was used in the project.',
     mainImage: '/screenshots/Graphing Calculator - 1.png',
     technologies: ['Elm'],
     images: [
